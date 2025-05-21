@@ -1,7 +1,6 @@
 import fetch from 'node-fetch';
 
 export default async function handler(req, res) {
-  const { city = 'Delhi', unit = 'm' } = req.query;
   const url = `https://wttr.in/${encodeURIComponent(city)}?format=j1`;
 
   try {
