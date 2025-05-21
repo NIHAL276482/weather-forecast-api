@@ -1,6 +1,12 @@
 import fetch from 'node-fetch';
 
 export default async function handler(req, res) {
+  const { city, unit } = req.query;
+
+  if (!city || !unit) {
+    return res.status(400).json({ error: "Missing required parameters: 'city' and 'unit'" });
+  }
+
   const url = `https://wttr.in/${encodeURIComponent(city)}?format=j1`;
 
   try {
@@ -31,7 +37,7 @@ export default async function handler(req, res) {
       },
       forecast
     });
-  } catch (e) {
+  } catch {
     res.status(500).json({ error: 'Failed to fetch weather data' });
   }
 }
