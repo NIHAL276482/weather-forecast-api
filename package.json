@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "deploy": "npm run deploy",
+    "deploy": "wrangler deploy",
     "dev": "wrangler dev"
   },
   "devDependencies": {
