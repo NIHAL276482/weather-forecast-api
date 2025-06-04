@@ -1,4 +1,5 @@
 name = "weather-api"
 main = "index.js"
-compatibility_date = "2025-06-04" # you can change the date to get compatible 
+compatibility_date = "2025-06-04"
 workers_dev = true
+compatibility_flags = ["nodejs_compat"]
