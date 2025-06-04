@@ -1,13 +1,13 @@
 {
   "name": "weather-api",
   "version": "1.0.0",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "deploy": "wrangler deploy",
     "dev": "wrangler dev"
   },
   "devDependencies": {
-    "node-fetch": "^3.3.2",
-    "wrangler": "^3.78.2"
+    "wrangler": "^4.19.1"
   }
 }
